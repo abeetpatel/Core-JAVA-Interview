@@ -1,0 +1,24 @@
+package com.rays.javabasic;
+
+public class FunctionalIntTest{
+
+	public static void main(String[] args) {
+
+		FunctionalInt f = new FunctionalInt() {
+
+			@Override
+			public int sum(int a, int b) {
+				return (a + b);
+			}
+		};
+
+		int a = 20;
+		int b = 10;
+		System.out.println(f.sum(a, b));
+		f.multi(a, b);
+		FunctionalInt.sub(a, b);
+
+	}
+
+
+}
